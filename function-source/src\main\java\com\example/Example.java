@@ -62,7 +62,7 @@ public class Example implements BackgroundFunction<NOI> {
               operation = noiJson.get("operation").getAsString();
               metaName = noiJson.get("metaName").getAsString();
               if((type.equals(noiType)) && (operation.equals(noiOperation)) && (metaName.equals(noiMetaName))){
-                logger.info("equals");
+                logger.info("equals parameter");
                 HttpTransport httpTransport = GoogleNetHttpTransport.newTrustedTransport();
                 JsonFactory jsonFactory = JacksonFactory.getDefaultInstance();
                 GoogleCredential credential = GoogleCredential.getApplicationDefault(httpTransport, jsonFactory);
